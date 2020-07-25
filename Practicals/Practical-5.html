@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practical-5 Image Map</title>
+</head>
+
+<body>
+    <div class="navbar-division">
+        <img class="navbar" src="../images/navbar.png" alt="Navbar menu" border="0" usemap="#map2" />
+        <map id="map2" name="map2">
+      <area shape="rect" coords="10,13,102,50" href="../index.html" target="_blank" alt="Practical-1 Page">
+      <area shape="rect" coords="122,15,314,51" href="Practical-1.html" target="_blank" alt="Practical-1 Page">
+      <area shape="rect" coords="332,16,530,52" href="Practical-2.html" target="_blank" alt="Practical-2 Page">
+      <area shape="rect" coords="554,15,753,50" href="Practical-3.html" target="_blank" alt="Practical-3 Page">
+      <area shape="rect" coords="773,16,968,50" href="Practical-4.html" target="_blank" alt="Practical-4 Page">
+      <area shape="rect" coords="987,17,1184,48" href="Practical-5.html" target="_blank" alt="Practical-5 Page">
+    </map>
+    </div>
+
+    <div class="main-image">
+        <h1 class="intro-heading">Introduction to Front-End Technologies</h1>
+        <img class="web-tech" src="../images/Practical-5.jpg" alt="Web-Technologies" title="image map" usemap="#map1">
+        <map id="map1" name="map1">
+      <area href="Practical-5-html.html" shape="rect" coords="18,9,171,167 " target="_blank " alt="HTML Page " />
+      <area href="Practical-5-css.html" shape="circle" coords="289,91,86 " target="_blank " alt="CSS Page " />
+      <area href="Practical-5-JS.html" shape="rect" coords="24,198,171,337 " target="_blank " alt="JavaScript Page " />
+      <area href="Practical-5-bootstrap.html" target="_blank" shape="poly" coords="231,224,258,214,288,203,317,213,346,223,344,245,340,277,337,300,314,313,289,328,264,315,240,301,237,278,233,245 " alt="Bootstrap Page">
+    </map>
+        <h4 class="img-info">Click on any part of logo to know more about these technologies</h4>
+    </div>
+
+    <style>
+        body {
+            background-color: #ad9d9d;
+            text-align: center;
+        }
+        
+        .navbar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .intro-heading {
+            color: #ffffdd;
+            font-family: 'Arial';
+        }
+        
+        .web-tech {
+            margin: 10px auto;
+        }
+        
+        .img-info {
+            color: #cf1b1b;
+        }
+    </style>
+</body>
+
+</html>
