@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #header {
+            background-color: darkgrey;
+            height: 60px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 35px;
+            position: fixed;
+            top: 0;
+            width: 97.78%;
+        }
+        
+        #MainBlock {
+            margin: 0px auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        
+        #header ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            overflow: hidden;
+        }
+        
+        #header ul li {
+            display: inline-block;
+        }
+        
+        #header ul li a {
+            text-decoration: none;
+            display: block;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 40px;
+        }
+        
+        #header ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        #img1 {
+            width: 100%;
+            height: 500px;
+        }
+        
+        h1#head1 {
+            position: absolute;
+            top: 105px;
+            left: 22px;
+            color: white;
+        }
+        
+        #banner {
+            margin-bottom: 50px;
+        }
+        
+        h1#head2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        #team-members .user img {
+            border-radius: 50%;
+            float: left;
+            padding-left: 47px;
+            padding-right: 47px;
+        }
+        
+        #team-members::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        #team-members {
+            margin-bottom: 50px;
+        }
+        
+        h1#head3 {
+            text-align: center;
+        }
+        
+        #aboutus {
+            margin-bottom: 15px;
+        }
+        
+        #main-div {
+            height: 400px;
+            margin-bottom: 50px;
+        }
+        
+        #left-div {
+            width: 640px;
+            height: 400px;
+        }
+        
+        #right-div {
+            width: 640px;
+            height: 400px;
+            float: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: centre;
+        }
+        
+        #pro-1 {
+            background-size: 100%;
+            background-image: url(/FullStack_Practicals/Fullstack_Practical/images/team1.jpg);
+        }
+        
+        #pro-2 {
+            background-size: 100%;
+            background-image: url(/FullStack_Practicals/Fullstack_Practical/images/team2.jpeg);
+        }
+        
+        #pro-3 {
+            background-size: 100%;
+            background-image: url(/FullStack_Practicals/Fullstack_Practical/images/tech.jpg);
+        }
+        
+        #right-div div {
+            height: 400px;
+            width: 640px;
+            text-align: center;
+        }
+        
+        #left-div p {
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 25px;
+            padding-bottom: 30px;
+            color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        #left-div {
+            background-color: grey;
+        }
+        
+        #left-div h2 {
+            color: white;
+            padding-left: 15px;
+            padding-top: 10px;
+        }
+        
+        #head4 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        #tech-used h1 {
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        #tech-used div {
+            height: 400px;
+            width: 270px;
+            border-radius: 1pc;
+            padding: 15px;
+            margin-left: 14px;
+            margin-right: 14px;
+            float: left;
+            background-color: lightgrey;
+        }
+        
+        #tech-used img {
+            height: 175px;
+            width: 270px;
+            border-radius: 0.5pc;
+        }
+        
+        #tech-used h3 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        #tech-used p {
+            text-align: justify;
+            padding-bottom: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-top: 0px;
+        }
+        
+        #tech-used a {
+            padding-top: 8px;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-bottom: 5px;
+            color: white;
+            border-radius: 0.5pc;
+            text-decoration: none;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: red;
+            text-align: center;
+        }
+        
+        #tech-used a:hover {
+            background-color: blue;
+        }
+        
+        #tech-used {
+            height: 440px;
+        }
+        
+        #head5 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        #template {
+            text-align: center;
+            background-color: rgb(241, 118, 138);
+            height: 70px;
+        }
+        
+        #template #head6 {
+            padding-top: 10px;
+        }
+        
+        #template #back {
+            text-decoration: none;
+            color: white;
+        }
+        
+        #contact {
+            margin-top: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="MainBlock">
+        <div id="header">
+            <ul id="navbar">
+                <li>
+                    <a href="#banner">HOME</a>
+                </li>
+                <li>
+                    <a href="#aboutus">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="#team">TEAM</a>
+                </li>
+                <li>
+                    <a href="#tech">TECHNOLOGIES</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div id="banner">
+            <div>
+                <img id="img1" src=" /FullStack_Practicals/Fullstack_Practical/images/background.jpg ">
+            </div>
+            <h1 id="head1">PRACTICAL - 8</h1>
+        </div>
+        <div id="team">
+            <h1 id="head2">Team Members</h1>
+        </div>
+        <div id="team-members">
+            <div class="user"><img src="/FullStack_Practicals/Fullstack_Practical/images/user1.png" alt="Team-member"></div>
+            <div class="user"><img src="/FullStack_Practicals/Fullstack_Practical/images/user2.png" alt="Team-member"></div>
+            <div class="user"><img src="/FullStack_Practicals/Fullstack_Practical/images/user3.png" alt="Team-member"></div>
+            <div class="user"><img src="/FullStack_Practicals/Fullstack_Practical/images/user4.png" alt="Team-member"></div>
+        </div>
+        <div id="aboutus">
+            <h1 id="head3">About Us</h1>
+        </div>
+
+        <div id="main-div">
+            <div id="right-div">
+                <div id="pro-1">
+                    <h1>Project-1</h1>
+                </div>
+                <div id="pro-2">
+                    <h1>Project-2</h1>
+                </div>
+                <div id="pro-3">
+                    <h1>Project-3</h1>
+                </div>
+            </div>
+
+
+            <div id="left-div">
+                <h2>About Projects</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quod aut hic modi voluptatum dolorem totam voluptatibus dignissimos in debitis, necessitatibus minima fuga quibusdam illum voluptate, sit repellendus enim cumque, ab officiis
+                    nesciunt minus. Quisquam consectetur quis atque sequi animi corrupti accusantium amet esse ab nesciunt ipsa, deserunt eos consequuntur reiciendis fuga ipsam consequatur voluptas nostrum aliquid distinctio perspiciatis ratione similique
+                    aliquam inventore? Cupiditate possimus rem voluptatibus, dolor iste vel? Excepturi voluptate tempora sapiente atque repellendus odio, assumenda provident iure, aliquid quia at veritatis ab! Nesciunt id molestiae libero obcaecati, quo
+                    assumenda, earum quasi dolores sapiente tenetur reiciendis? Veniam enim perferendis similique unde, ad est temporibus omnis incidunt itaque earum culpa eum sapiente, dolorem fugit obcaecati, quam repudiandae necessitatibus sit nisi
+                    odit! Eveniet soluta laborum quis, error tempore amet architecto sapiente a tenetur neque qui reprehenderit unde, deserunt nostrum. Eaque saepe quibusdam quos natus harum architecto ratione, nam quod non modi minus aliquid, tenetur
+                    praesentium. Sapiente modi dolor hic tempora, veniam accusantium rem labore delectus sed consequatur aspernatur optio placeat in. Odit repellat dicta rem fugit suscipit unde neque numquam vero, cupiditate at aut hic quae iusto architecto?
+
+                </p>
+            </div>
+        </div>
+        <div id="tech">
+            <h1 id="head4">Technologies Used</h1>
+        </div>
+
+        <div id="tech-used">
+            <div>
+                <img src="/FullStack_Practicals/Fullstack_Practical/images/Introduction to HTML.png" alt="Introduction To HTML" />
+                <h3>Introduction To HTML</h3>
+                <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages. Hypertext refers to the way in which Web pages (HTML documents) are linked together.</p>
+                <a href="Practical-1.html" target="_blank">Read More</a>
+            </div>
+            <div>
+                <img src="/FullStack_Practicals/Fullstack_Practical/images/Introduction-To-CSS.jpg" alt="Introduction To CSS" />
+                <h3>Introduction To CSS</h3>
+                <p>CSS is short for Cascading Style Sheets, and is the preferred way for setting the look and feel of a website. It controls the colors, fonts, and layouts of your website elements.</p>
+                <a href="Practical-2.html" target="_blank">Read More</a>
+            </div>
+            <div>
+                <img src="/FullStack_Practicals/Fullstack_Practical/images/Introduction To JavaScript.png " alt="Introduction To JavaScript" />
+                <h3>Introduction To JavaScript</h3>
+                <p>Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run. In this aspect, JavaScript is very different from another language called Java.</p>
+                <a href="Practical-3.html " target="_blank ">Read More</a>
+            </div>
+            <div>
+                <img src="/FullStack_Practicals/Fullstack_Practical/images/Introduction To BootStrap.jpg " alt="Introduction To BootStrap" />
+                <h3>Introduction To BootStrap</h3>
+                <p>Bootstrap is a free and open-source framework for creating websites and web applications. It's the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects.</p>
+                <a href="Practical-4.html " target="_blank ">Read More</a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h1 id="head5">Contact</h1>
+            <div id="template">
+                <h4 id="head6">Website Template For Practical-8</h4>
+                <br>
+                <a id="back" href="#top">BACK TO TOP</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
