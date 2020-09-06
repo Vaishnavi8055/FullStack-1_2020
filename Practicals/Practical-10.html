@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Practical-10</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .header {
+            position: fixed;
+            display: flex;
+            background-color: darkslategrey;
+            height: 70px;
+            width: 100%;
+            justify-content: center;
+            line-height: 70px;
+        }
+        
+        .header img {
+            height: 70px;
+            width: 70px;
+            margin-right: 10px;
+        }
+        
+        .header h1 {
+            color: white;
+        }
+        
+        .content {
+            width: 100%;
+            transition: 0.7s;
+            float: right;
+        }
+        
+        .banner {
+            height: 60vh;
+            width: 100%;
+            background-image: url(../images/background.jpg);
+            background-position-y: -15vh;
+            margin-bottom: 20px;
+            background-attachment: fixed;
+            transition: 0.7s;
+        }
+        
+        .side {
+            height: 100%;
+            width: 20%;
+            position: fixed;
+            top: 70px;
+            background-color: #353b48;
+            left: -100%;
+            transition: 0.7s;
+            z-index: 99;
+        }
+        
+        .side ul li a {
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 15px 25px;
+            color: white;
+        }
+        
+        .side ul li {
+            list-style: none;
+            border-bottom: 2px solid rgba(225, 225, 225, .1);
+        }
+        
+        a i {
+            margin-right: 10px;
+        }
+        
+        .side ul li a:hover {
+            border-left: solid 10px white;
+        }
+        
+        i {
+            color: white;
+        }
+        
+        .social {
+            justify-content: center;
+            margin-top: 200px;
+            border-bottom: 2px solid rgba(225, 225, 225, .1);
+            font-size: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .sbtn,
+        .hbtn {
+            font-size: 30px;
+            color: white;
+            position: fixed;
+            top: 20px;
+            left: 40px;
+        }
+        
+        .hbtn {
+            opacity: 0;
+        }
+        
+        #chk:checked~.side {
+            left: 0;
+        }
+        
+        #chk:checked~.sbtn {
+            opacity: 0;
+        }
+        
+        #chk:checked~.hbtn {
+            opacity: 1;
+        }
+        
+        #chk:checked~.content {
+            width: 80%;
+        }
+        
+        #chk:checked~.content .banner {
+            background-position-x: 10vw;
+        }
+        /* #chk{
+    position: absolute;
+    z-index: -10;
+    visibility: hidden;
+} */
+        
+        @media screen and (max-width:768px) {
+            .side {
+                width: 100%;
+                text-align: center;
+            }
+            .header h1 {
+                display: none;
+            }
+            .social {
+                margin-top: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="../images/cropped-fullstack-logo-full-colour-icon-only.png" alt="full stack icon">
+        <h1>Fullstack</h1>
+    </header>
+    <!-- <div>
+        <input type="checkbox" name="" id="chk">
+        <label for="chk" class="sbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label for="chk" class="hbtn">
+            <i class="fa fa-times"></i>
+        </label>
+    </div> -->
+    <input type="checkbox" id="chk">
+    <label for="chk" class="sbtn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label for="chk" class="hbtn">
+        <i class="fa fa-times"></i>
+    </label>
+
+    <div class="side">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i> About</a></li>
+            <li><a href="#"><i class="fa fa-user"></i> Home</a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i> Services</a></li>
+            <li><a href="#"><i class="fa fa-rss"></i> Blog</a></li>
+            <li><a href="#"><i class="fa fa-id-card"></i> Contact</a></li>
+        </ul>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-youtube-square"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="banner">
+
+        </div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga voluptates modi sequi cupiditate omnis libero explicabo expedita cumque tenetur asperiores quos consequuntur rem tempora dolor porro velit animi, laudantium, nam perspiciatis optio
+            tempore molestiae similique officiis. Tempora et dolores eaque expedita dignissimos harum veniam qui quis iure molestiae nesciunt perspiciatis deleniti aliquid rerum omnis placeat, mollitia explicabo sit, aliquam quos repellendus eius! Ratione,
+            tenetur possimus? Laborum expedita molestiae unde quos voluptate nostrum reiciendis maxime quibusdam cum, aut, necessitatibus qui fugit. Soluta, sint? Illo eligendi facere iste commodi accusamus veritatis ab, quo ullam magnam delectus atque
+            reprehenderit esse nisi blanditiis optio. Porro tenetur sed deleniti in ipsum dignissimos aliquam, totam quos voluptatum, est at incidunt delectus repudiandae voluptatem itaque quis eveniet ipsam perferendis id. Ratione quisquam suscipit molestias
+            aut minus nisi iusto earum voluptas! Optio et quam aut esse nisi atque suscipit sequi, labore doloremque pariatur fugiat delectus, voluptatibus necessitatibus vero? Qui, aut, in reprehenderit temporibus, quas dignissimos enim et est non accusamus
+            dolor delectus amet. Optio, sunt. Error, earum cum dolorem expedita dicta minima, in veritatis cupiditate perferendis eligendi, ipsum ut sapiente! Animi sapiente, dolor iure error explicabo sit at ipsa alias, magnam consequuntur minima ullam
+            obcaecati? Amet debitis accusantium placeat laborum voluptas unde, omnis obcaecati, soluta eius reiciendis eos vitae in? Doloribus dolorum sapiente, quidem est expedita quaerat iure eum a impedit veritatis hic, laborum, repellendus error.
+            Voluptate nesciunt qui alias unde. Excepturi accusamus quidem a odit rem vitae facilis, reiciendis sit quis debitis voluptatibus modi minus minima ratione sint dolores molestiae delectus dolorum quas obcaecati provident illum non velit nemo?
+            Neque mollitia, cum consequatur nulla quibusdam est non fugiat explicabo, eaque necessitatibus voluptates laborum accusantium aspernatur nobis, excepturi veniam doloribus cumque labore ducimus vero perspiciatis maiores illo nihil totam. Corrupti
+            officia assumenda animi, neque, saepe distinctio atque rem voluptate enim voluptatibus quam. Porro et accusantium deserunt voluptatem quia quae dicta maiores odit ipsum delectus. Facilis mollitia quaerat nihil, officiis minima amet excepturi
+            ipsam, corporis ipsum aliquam tempora! Ratione, facilis minima quis rem animi incidunt consectetur porro dolorem delectus facere saepe inventore, quia quae dolor adipisci placeat explicabo magni ab voluptatum laboriosam possimus consequuntur
+            quo deserunt. Deserunt suscipit alias, nulla optio, eius cumque molestiae consectetur rem odio asperiores deleniti ipsam. Libero labore qui nesciunt repellendus culpa, optio placeat a reprehenderit iste reiciendis enim quisquam. Quis, at iusto
+            exercitationem distinctio aliquid, reprehenderit odit rerum dicta possimus similique deleniti! Aperiam saepe consequatur, aliquid officia at praesentium rem vero! Optio esse, nostrum dolorem praesentium corporis magni necessitatibus molestias,
+            voluptate aperiam sunt exercitationem asperiores consequatur soluta quas distinctio voluptatum earum veritatis maiores, eos natus. Suscipit nisi ipsam aspernatur excepturi qui numquam veniam porro praesentium dicta dolores dolorum ducimus
+            cum, ad, nemo tenetur fuga sint aliquam itaque commodi. Impedit magni molestiae cum natus! Placeat doloribus nesciunt dicta eligendi ea sit consequatur fuga atque quod, veritatis odit nisi quae dolor iusto? Deleniti cum mollitia sunt quos.
+            Iusto animi vero quidem minima, saepe ullam ipsum adipisci voluptatibus fuga soluta dolorum error, porro at. Praesentium, consectetur, sequi veniam aspernatur soluta voluptatem distinctio quae eveniet architecto dicta quod iusto tempora commodi
+            quis sunt aliquid! Repudiandae, eius. Harum recusandae nemo suscipit, mollitia fugit totam repudiandae assumenda doloremque distinctio sapiente at maiores odio labore quod quis exercitationem voluptas aperiam ut modi. Quibusdam officiis impedit
+            iure alias optio neque dolor minus tenetur, voluptatibus odio molestias exercitationem culpa dignissimos. Magnam quaerat distinctio reprehenderit illo nesciunt repudiandae, dolore eos in maxime expedita, non hic iste facilis odit veniam autem
+            cumque sunt optio omnis? Rem ipsum adipisci, doloribus soluta, reprehenderit vel voluptate nihil animi alias quaerat magni! Perferendis excepturi nisi architecto ad iste vel. Sapiente quis autem quae quisquam, nisi accusantium ullam sunt ad
+            numquam voluptatibus at blanditiis voluptate perferendis eum facilis aliquam sequi eligendi rem recusandae fugiat architecto in! Quisquam unde nisi blanditiis fuga excepturi, at velit nemo itaque odio ipsa dolorum sint, aut omnis maxime est
+            laborum eaque. Earum iusto numquam quos assumenda porro, distinctio consequuntur laboriosam maxime enim, delectus aliquid hic ipsa ipsam dolorem modi optio esse molestiae vero beatae ea neque. Sapiente architecto rem eligendi delectus aliquam?
+            Officiis fuga sint error neque optio illo laborum aspernatur voluptatibus nam quam tenetur debitis necessitatibus illum dolor quibusdam temporibus sed enim magni molestias inventore, in vero voluptatem et! Sint debitis id quidem vel iste possimus
+            fugiat, minima illo rerum omnis placeat officiis inventore sit pariatur totam exercitationem autem laudantium! Esse excepturi, nobis vel reprehenderit incidunt amet ipsam odit enim aliquam ad saepe sunt itaque minima facere deleniti voluptatibus
+            a repudiandae laborum inventore eum similique explicabo delectus quos eos? Doloremque, similique quam officiis sint expedita obcaecati nihil rerum nisi praesentium architecto assumenda voluptas harum voluptatibus adipisci esse autem provident
+            accusamus, minima accusantium nesciunt. Fuga similique asperiores rerum hic. Dicta et autem omnis quos nisi officia obcaecati? Nostrum cupiditate sint, ducimus minus, natus eum unde accusamus labore, quam nihil dicta hic voluptatem! Dolores
+            aspernatur corporis, autem placeat quasi perferendis. Officia autem iusto animi incidunt dolor eveniet nisi fuga libero omnis sed quos sapiente laudantium pariatur ex repellendus vero, totam, aut, sequi esse molestias quis tempore eaque odio
+            nesciunt. Amet at, asperiores laboriosam veritatis rem ipsum corrupti odio ea, sunt commodi aliquid ratione doloremque aut quod ducimus explicabo voluptatem vero excepturi non a, eius sequi velit. Vitae officia labore rem recusandae, atque
+            harum, fuga facere consequatur sapiente dolor dolorum culpa quas maxime, perferendis aliquam velit alias unde deleniti tempora ipsum fugiat nam asperiores! Quia quod deserunt doloribus optio iure qui ipsa quis non repellat eos, enim facilis
+            delectus minima officiis? Vel, corrupti asperiores. Cum veniam dignissimos vitae vel. Eaque qui, nobis numquam esse aut laboriosam, ratione dolorum dolorem rerum minima recusandae amet optio? Ducimus dignissimos quisquam delectus at itaque,
+            id, optio distinctio laborum quas minima harum debitis similique porro earum error consequatur asperiores quidem aliquam cumque numquam? Commodi magnam nihil eius eos, assumenda aliquam fuga dolor vel perspiciatis, veritatis, illum quod repellendus?
+            Fugit eligendi repellendus quae perspiciatis veniam, perferendis aut nobis totam maiores quibusdam fuga aliquam ab officia vel placeat tenetur dolore possimus? Facilis, culpa.
+
+        </p>
+
+    </div>
+</body>
+
+</html>
