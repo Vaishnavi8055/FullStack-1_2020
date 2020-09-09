@@ -52,6 +52,20 @@ FullStack-1_2020 is a repository contains HTML , CSS Web-Pages.
 <h2>Practical-10</h2>
 <a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-10.html" target="_blank">Practical-10</a>
 
+<hr>
+
+<h2>Practical-11</h2>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-11.html" target="_blank">Practical-11</a>
+
+<hr>
+
+<h2>Practical-12</h2>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-12.html" target="_blank">Practical-12</a>
+
+
+
+
+
 
 
 
