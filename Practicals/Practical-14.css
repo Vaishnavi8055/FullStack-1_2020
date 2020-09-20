@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: skyblue;
+}
+
+h1 {
+    color: red;
+    text-shadow:1.8px 1.8px 5px rgba(0, 0, 0, .6);
+    font-size: 300%;
+    margin-top: 20px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2px;
+
+}
+
+#templates {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#templates > div {
+    margin: 70px 20px 50px;
+    width: 350px;
+    height: 400px;
+    background-color: white;
+}
+
+#login .top {
+    height: 100px;
+    background-image: linear-gradient(to right , #ee275f , #f3ef16);
+ 
+}
+h2 {
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+#login .social-links {
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#login .social-links a{
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 40px;
+    font-size: 130%;
+}
+.mid {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+form input {
+    border: 0px;
+    line-height: 50px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+#login .mid a {
+    float: right;
+    margin-top: 10px;
+    font-size: 80%;
+    text-decoration: none;
+}
+.bottom {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.bottom .btn {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #111d5e;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+.bottom p {
+    float: right;
+    font-size: 80%;
+    line-height: 40px;
+}
+
+/* for sign up section */
+#signup h2 {
+    color: #e7305b;
+}
+#signup .mid > input {
+    margin-top: 15px;
+    margin-right: 5px;
+    float: left;
+}
+#signup .mid p {
+    margin-top: 15px;
+    font-size: 80%;
+}
+#signup .bottom {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#signup .bottom .btn {
+    background-color: #e7305b;
+}
+#signup .footer {
+    background-color: slategrey;
+    margin-top: 90px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signup .footer i {
+    font-size: 130%;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* for sign in section */
+#signin h2 {
+    color: royalblue;
+}
+#signin .mid a {
+    float: right;
+    margin-top: 10px;
+    font-size: 80%;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+#signin .first-p {
+    margin-top: 50px;
+    background-color: royalblue;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+#signin .first-p a {
+    color: white;
+    text-decoration: none;
+}
+#signin .second-p {
+    margin-top: 10px;
+    text-align: center;
+}
+#signin .footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signin .footer i {
+    color: royalblue;
+    width: 50px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 2px 2px #8393ab;
+}
+
+a:focus {
+    outline: none;
+
+}
+@media(max-width:1080px){
+    #templates {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    #templates > div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
