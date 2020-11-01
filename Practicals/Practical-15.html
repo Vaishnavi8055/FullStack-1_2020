@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        header {
+            color: blue;
+            font-weight: 900;
+            font-size: 60px;
+            text-align: center;
+            font-style: italic;
+            text-shadow: 2px 2px 2px yellow;
+        }
+        
+        #increment {
+            background-color: yellow;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 11%;
+            border-color: rgb(230, 21, 56);
+            border-width: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 55px
+        }
+        
+        #decrement {
+            background-color: yellow;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 11%;
+            border-color: rgb(230, 21, 56);
+            border-width: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 55px;
+        }
+        
+        .main {
+            margin: auto;
+            text-align: center;
+        }
+        
+        span {
+            font-size: 40px;
+            color: red;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <header>COUNTER</header>
+    <div class="main">
+        <button id="increment" onclick="incre()">+</button>
+
+        <span id="count">0</span>
+
+        <button id="decrement" onclick="decre()">-</button>
+    </div>
+    <script>
+        function decre() {
+            var num = parseInt(document.getElementById("count").textContent);
+            if (num > 0) {
+                document.getElementById('count').innerHTML = num - 1;
+            }
+
+        }
+
+        function incre() {
+            var num = parseInt(document.getElementById("count").textContent);
+            document.getElementById('count').innerHTML = num + 1;
+        }
+    </script>
+</body>
+
+</html>
