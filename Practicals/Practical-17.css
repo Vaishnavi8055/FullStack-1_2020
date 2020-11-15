@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    flex-direction: column;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#time {
+    font-size: 8rem;
+}
+
+#greeting {
+    font-size: 2rem;
+}
+
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    opacity: .5;
+}
+
+h3 {
+    font-size: 2rem;
+}
