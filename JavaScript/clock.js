@@ -45,14 +45,14 @@ function setgreeting() {
     let hours = today.getHours();
 
     if (hours < 12) {
-        document.body.style.backgroundImage = 'url("../images/Good-Morning.jpeg")'
+        document.body.style.backgroundImage = 'url("images/Good-Morning.jpeg")'
         greeting.innerHTML = "Good Morning !";
     } else if (hours < 18) {
-        document.body.style.backgroundImage = 'url("../images/Good-Afternoon.jpg")'
+        document.body.style.backgroundImage = 'url("Good-Afternoon.jpg")'
         greeting.innerHTML = "Good Afternoon !";
         document.body.style.color = 'yellow'
     } else {
-        document.body.style.backgroundImage = 'url("../images/Good Evening.jpg")'
+        document.body.style.backgroundImage = 'url("Good Evening.jpg")'
         greeting.innerHTML = 'Good Evening !';
         document.body.style.color = 'white'
     }
