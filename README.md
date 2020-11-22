@@ -1,5 +1,5 @@
 # FullStack-1_2020
-FullStack-1_2020 is a repository contains HTML , CSS Web-Pages.
+FullStack-1_2020 is a repository contains HTML, CSS, JS Web-Pages.
 
 <h2>Practicals Report Page </h2>
 <a href="https://vaishnavi8055.github.io/FullStack-1_2020/" target="_blank">Practical Report Page</a>
@@ -61,6 +61,41 @@ FullStack-1_2020 is a repository contains HTML , CSS Web-Pages.
 
 <h2>Practical-12</h2>
 <a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-12.html" target="_blank">Practical-12</a>
+
+<hr>
+
+<h2>Practical-13</h2>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-13.html" target="_blank">Practical-12</a>
+
+
+
+<hr>
+
+<h2>Practical-14</h2>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-14.html" target="_blank">Practical-12</a>
+
+
+
+<hr>
+
+<h2>Practical-15</h2>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-15.html" target="_blank">Practical-12</a>
+
+<hr>
+
+<h2>Practical-16</h2>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-16.html" target="_blank">Practical-12</a>
+
+<hr>
+
+<h2>Practical-17</h2>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-17.html" target="_blank">Practical-12</a>
+
+
+
+
+
+
 
 
 
