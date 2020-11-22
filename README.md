@@ -65,31 +65,31 @@ FullStack-1_2020 is a repository contains HTML, CSS, JS Web-Pages.
 <hr>
 
 <h2>Practical-13</h2>
-<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-13.html" target="_blank">Practical-12</a>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-13.html" target="_blank">Practical-13</a>
 
 
 
 <hr>
 
 <h2>Practical-14</h2>
-<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-14.html" target="_blank">Practical-12</a>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-14.html" target="_blank">Practical-14</a>
 
 
 
 <hr>
 
 <h2>Practical-15</h2>
-<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-15.html" target="_blank">Practical-12</a>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-15.html" target="_blank">Practical-15</a>
 
 <hr>
 
 <h2>Practical-16</h2>
-<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-16.html" target="_blank">Practical-12</a>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-16.html" target="_blank">Practical-16</a>
 
 <hr>
 
 <h2>Practical-17</h2>
-<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-17.html" target="_blank">Practical-12</a>
+<a href="https://vaishnavi8055.github.io/FullStack-1_2020/Practicals/Practical-17.html" target="_blank">Practical-17</a>
 
 
 
