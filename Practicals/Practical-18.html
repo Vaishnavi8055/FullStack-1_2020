@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Create Account</h1>
+    </div>
+    <form class="form" id="form">
+       <!-- username-->
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter Your Name"/>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error Message</small>
+        </div>
+        <!-- Email-->
+        <div class="form-control">
+            <label for="email">Email ID</label>
+            <input type="text" id="email" placeholder="Enter Your Email ID"/>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error Message</small>
+        </div>
+      <!-- Password-->
+        <div class="form-control">
+            <label for="password-1">Password</label>
+            <input type="text" id="password-1" placeholder="Enter Your Password"/>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error Message</small>
+        </div>
+        <!--Recheck Password-->
+        <div class="form-control">
+            <label for="password-2">Re-Enter Password</label>
+            <input type="text" id="password-2" placeholder="Re-Enter Password"/>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <!--<small>Error Message</small>-->
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

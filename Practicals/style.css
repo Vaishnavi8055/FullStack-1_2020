@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: darkblue;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background: white;
+    min-width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header{
+    background: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+.form{
+    padding: 20px 30px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    padding: 5px;
+}
+
+.form-control input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    outline: none;
+}
+
+.form-control  i {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    visibility: hidden;
+}
+
+.form-control small{
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    margin-top: 5px;
+}
+
+.form button{
+    display: block;
+    width: 100%;
+    background: darkslateblue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+/*Style for Error  & Success Message*/
+
+.form-control.success input{
+    border-color: #57a511;
+}
+
+.form-control.error input{
+    border-color: #ff0000;
+}
+
+.form-control.success .fa-check-circle {
+    visibility: visible;
+    color: #57a511;
+}
+
+.form-control.error .fa-exclamation-circle {
+    visibility: visible;
+    color: red;
+}
+
+.form-control.success small {
+    visibility: visible;
+    color: #57a511;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: red;
+}
