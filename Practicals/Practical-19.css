@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: darkgray;
+    background-color: black;
     font-family: 'Open Sans', sans-serif;
     height: 100vh;
     display: flex;
