@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgray;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 360px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.container form{
+    position: absolute;
+    width: 260px;
+    left: 40px;
+    top: 80px;
+    transition: 0.5s;
+}
+form h3{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #777;
+}
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+    margin-bottom: 10px ;
+    background: transparent;
+}
+.btn-box{
+    margin: 30px 0;
+    text-align: center;
+}
+form button{
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    color: white;
+}
+#form2,#form3{
+    left: 450px;
+}
+
+.step-row{
+    width: 360px;
+    height: 40px;
+    box-shadow: 0px -1px 5px -1px #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: #000;
+    z-index: 1;
+}
+#progress{
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    background-color: crimson;
+    transition: 1s;
+}
+#progress::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 20px solid crimson;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    right: -20px;
+}
