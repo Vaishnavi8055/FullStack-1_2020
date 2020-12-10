@@ -1,5 +1,5 @@
 # FullStack-1_2020
-FullStack-1_2020 is a repository contains HTML, CSS, JS Web-Pages.
+FullStack-1_2020 is a repository contains practicals using HTML, CSS, JS and BootStrap.
 
 <h2>Practicals Report Page </h2>
 <a href="https://vaishnavi8055.github.io/FullStack-1_2020/" target="_blank">Practical Report Page</a>
